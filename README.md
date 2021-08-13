@@ -1,2 +1,1 @@
-A fake cloud hosting website, built with HTML 5, CSS and Javascript.
-
+A cloud hosting website, built with HTML 5, CSS, and Vanilla Javascript deployed to Netlify.
