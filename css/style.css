@@ -1,6 +1,13 @@
 /* font choice - Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+/* css variables */
+:root {
+    --primary-color: #047aed;
+    --text-color: #fff;
+}
+
+
 
 /* Base Style */
 
@@ -39,14 +46,14 @@ img{
     width: 100%;
 }
 
-/* Style Navbar */
+/* Navbar */
+
 .navbar{
-    background-color: #047aed;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     height: 70px;
 }
 
-/* Navbar specific -flex */
 .navbar .flex{
     justify-content: space-between;
 }
@@ -65,7 +72,78 @@ img{
     border-bottom: 2px solid #fff;
 }
 
+/* Showcase */
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: relative;
 
+}
+
+/* the slant beneath the showcase form */
+.showcase::before, 
+.showcase::after{
+    content: '';
+    position: absolute;
+    background-color:#fff;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form{
+    position: relative;
+    top : 60px;
+    height: 350px;
+    width : 400px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+
+.showcase-form .form-control{
+    margin : 30px 0;
+
+}
+
+.showcase-form input[type = 'text'],
+.showcase-form input[type = 'email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width : 100%;
+    padding : 3px;
+    font-size: 16px;
+    
+}
+
+
+.showcase-form input:focus{
+    outline:none;
+}
+
+
+
+
+/* Utilities */
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -74,13 +152,53 @@ img{
    
 }
 
-/* utility class for container */
+
 .flex{
     display: flex;
     align-items: center;
     justify-content:center;  
     height: 100%;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn{
+   display: inline-block;
+   padding: 10px 30px ;
+   cursor: pointer;
+   background-color: var(--primary-color);
+   color : var(--text-color);
+   border: none;
+   border-radius: 5px;
+
+}
+
+.btn-outline { 
+    border: 1px solid #fff;
+    background-color: transparent ;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
 
 
 
