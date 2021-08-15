@@ -29,6 +29,10 @@
     grid-template-columns: repeat(3,1fr);
 }
 
+.grid-7{
+    grid-template-columns: repeat(7,1fr);
+}
+
 .btn{
    display: inline-block;
    padding: 10px 30px ;
