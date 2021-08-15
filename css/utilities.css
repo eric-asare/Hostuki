@@ -64,6 +64,56 @@
     
 }
 
+/* Background & Colours buttons */
+
+.bg-primary, 
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+.bg-secondary, 
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+
+.bg-dark, 
+.btn-dark{
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}
+
+
+/* Text Sizes */
+
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+
+
+
+
+
 /* Margins */
     /* my = margin on the y-axis */
 

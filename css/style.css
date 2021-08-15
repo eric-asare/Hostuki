@@ -3,7 +3,9 @@
 
 /* css variables */
 :root {
-    --primary-color: #047aed;
+    --primary-color: #8f3cc0;
+    --secondary-color:#4B0082;
+    --dark-color:#150b18;
     --text-color: #fff;
 }
 
@@ -145,7 +147,6 @@ img{
     padding-top: 100px;
 }
 
-
 .stats-heading{
     max-width: 500px;
     margin: auto;
@@ -159,4 +160,34 @@ img{
 .stats .grid p{
     font-size: 20px;
     font-weight: bold;
+}
+
+.stats .grid{
+    gap: 100px;
+}
+
+/* Command Line Interface (CLI) */
+.cli .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.cli img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* select first-chid of .cli .grid */
+.cli .grid > *:first-child{
+     /* start from / and span     */
+    grid-column:  1 / span 2;
+    grid-row: 1 / span 2;
+
+}
+
+
+/* Cloud */
+
+.cloud .grid{
+   grid-template-columns: 4fr 3fr;
 }
