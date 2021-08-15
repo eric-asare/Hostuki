@@ -3,10 +3,11 @@
 
 /* css variables */
 :root {
-    --primary-color: #8f3cc0;
-    --secondary-color:#4B0082;
+    --primary-color:#4e0781;
+    --secondary-color: #8f3cc0;
+  
     --dark-color:#150b18;
-    --text-color: #fff;
+    --text-color: #f4f4f4;
 }
 
 
