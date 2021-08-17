@@ -96,13 +96,6 @@
 }
 
 
-.alert-succes{
-    background-color: var(--success-color);
-    color: var(--text-color);
-}
-
-
-
 /* make the links white against background */
 bg-primary a, 
 .btn-primary a,
@@ -112,6 +105,55 @@ bg-primary a,
 .btn-dark a{
     color: var(--text-color);
 }
+
+/* Text-colors */
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+
+.text-dark{
+    color: var(--dark-color);
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
+
+
+
+/* Alert */
+
+.alert{
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    
+}
+
+.alert i{
+    margin-right : 10px;
+}
+
+
+.alert-success{
+    background-color: var(--success-color);
+    color: var(--text-color);
+}
+
+.alert-error{
+    background-color: var(--error-color);
+    color: var(--text-color);
+}
+
 
 /* Text Sizes */
 
