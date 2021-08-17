@@ -44,7 +44,11 @@
 
         <div class="showcase-form card">
             <h2>Request a Demo</h2>
-            <form>
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
                 <div class="form-control">
                     <input type="text" name="name" placeholder="Name" required>
                 </div>
@@ -173,7 +177,7 @@
 
         <div class="social">
 
-            <a href="http://www.github.com"><i class="fab fa-github fa-2x "></i></a>
+            <a href="http://www.github.com/eric-asare"><i class="fab fa-github fa-2x "></i></a>
             <a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="http://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="http://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
